@@ -1,3 +1,7 @@
+# Load DNS Server
+dns_vagrantfile = 'DNS/Vagrantfile'
+load dns_vagrantfile if File.exists?(dns_vagrantfile)
+
 Vagrant.configure("2") do |config|
 
   config.vm.define "logger" do |cfg|
